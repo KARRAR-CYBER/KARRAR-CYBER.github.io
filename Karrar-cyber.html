@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hacked By Karrar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @-webkit-keyframes spaceboots {
+            0% {
+                -webkit-transform: translate(2px, 1px) rotate(0deg);
+            }
+
+            10% {
+                -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                -webkit-transform: translate(0px, 2px) rotate(0deg);
+            }
+
+            40% {
+                -webkit-transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                -webkit-transform: translate(2px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                -webkit-transform: translate(2px, 2px) rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        #anti {
+            -webkit-animation-name: spaceboots;
+            -webkit-animation-duration: 1.8s;
+            -webkit-transform-origin: 50% 50%;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            text-shadow: 0 0 50px #d00;
+        }
+    </style>
+</head>
+
+<body style="background-color:#000000; font-family:sans-serif; ">
+    <center><br>
+        <h3 style="text-shadow:0 3px 50px #ffffff; font-size: 1cm; color: #ffffff; border-style: dashed; font-family: B KOODAK;" id="Beginer"</h3>بِسْمِ ٱللَّٰهِ ٱلرَّحْمٰنِ ٱلرَّحِيمِ</h3>
+        </h1><br><br><br>
+        
+        <Center>
+            <hr>
+            <SCRIPT>
+                farbbibliothek = new Array();
+                farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+                farbbibliothek[1] = new Array("#00FF00", "#000000", "#00FF00", "#00FF00");
+                farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00");
+                farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+                farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
+                farbbibliothek[5] = new Array("#000000", "#000000", "#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
+                farbbibliothek[6] = new Array("#0000FF", "#FFFF00");
+                farben = farbbibliothek[4];
+                function farbschrift() {
+                    for (var i = 0; i < Buchstabe.length; i++) {
+                        document.all["a" + i].style.color = farben[i];
+                    }
+                    farbverlauf();
+                }
+                function string2array(text) {
+                    Buchstabe = new Array();
+                    while (farben.length < text.length) {
+                        farben = farben.concat(farben);
+                    }
+                    k = 0;
+                    while (k <= text.length) {
+                        Buchstabe[k] = text.charAt(k);
+                        k++;
+                    }
+                }
+                function divserzeugen() {
+                    for (var i = 0; i < Buchstabe.length; i++) {
+                        document.write("<font face='comic sans ms' size=30><span id='a" + i + "' class='a" + i + "'>" + Buchstabe[i] + "</span></font>");
+                    }
+                    farbschrift();
+                }
+                var a = 1;
+                function farbverlauf() {
+                    for (var i = 0; i < farben.length; i++) {
+                        farben[i - 1] = farben[i];
+                    }
+                    farben[farben.length - 1] = farben[-1];
+                    setTimeout("farbschrift()", 30);
+                }
+                var farbsatz = 1;
+                function farbtauscher() {
+                    farben = farbbibliothek[farbsatz];
+                    while (farben.length < text.length) {
+                        farben = farben.concat(farben);
+                    }
+                    farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001));
+                }
+                setInterval("farbtauscher()", 5000);
+                text = "𝐊𝐚𝐫𝐫𝐚𝐫 𝐂𝐲𝐛𝐞𝐫 𝐆𝐫𝐨𝐮𝐩";
+                string2array(text);
+                divserzeugen();
+            </SCRIPT>
+            <br><hr><br>
+            <center><img src="https://s8.uupload.ir/files/img_۲۰۲۴۰۹۰۶_۲۱۵۵۴۱۳۷۸_anhg.jpeg" align="center" width="80%"
+                    border="0"></center><br>
+            <p style="color:#0f0; font-size:30px;"><br>Iranian Hackers<br>☫☫☫☫☫☫☫☫☫☫☫☫☫☫☫☫☫<bbr>
+               
+               
+               
+               
+                    <h2 id="anti" style="color:#ffffff;font-family:times;font-size:45px;">𝐊𝐚𝐫𝐫𝐚𝐫 𝐂𝐲𝐛𝐞𝐫 𝐆𝐫𝐨𝐮𝐩</h2>
+                    <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; font-size:30px; color: #f3fb00;">Iranian Hackers</h5>
+                    <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; font-size:20px; color: #25ce03;">#Labbayk_Ya_Khamenei<p style="display: inline; color: red;"> ♥</p></h5>
+                       <h2 id="anti" style="color:#ffffff;font-family:times;font-size:45px;">LINKS:</h2>
+                       
+                         </p>
+            <a href="http://t.me/Karrar_Cyber_Group" style="font-size: larger; color: rgb(255, 255, 255);">TELEGRAM</a><br><br>
+            <a href="https://eitaa.com/Karrar_Cyber_Group" style="font-size: larger; color: rgb(255, 255, 255);">EITAA</a><br><br>
+            <a
+ href="https://virasty.com/Karrar_Cyber_Group" style="font-size: larger; color: rgb(255, 255, 255);">VIRASTY</a><br><br>
+            
+        </center>
+
+        </div>
+</body>
+        
+                    <h2 id="anti" style="color:#ffffff;font-family:times;font-size:45px;">: آخرین حملات</h2>
+
+<video controls>
+  <source src="https://caspian18.asset.aparat.com/aparat-video/2567e7bde54742a0c97171f9b8f477dd61631892-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjcxODZiODYzYTYzNjgwM2QxMzEyMDI0YTNhNGQyZThiIiwiZXhwIjoxNzMxMDAzMTE2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.FQOAF6A-dSaK0tE7ZDxXXojY95l6XU3x8Byjf1G1qiE" type="video/mp4">
+            </video>
